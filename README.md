@@ -23,8 +23,4 @@ Todos los ejemplos usan clones ligeros (backing store) sobre una imagen base qco
 
 - **`ejemplo5/`** — 2 VMs: server1 (Debian) y server2 (Ubuntu). Server1 actúa como gateway con acceso exterior via NAT (`ej5-nat-dhcp`) y conectividad interna en red muy aislada (`ej5-muy-aislada`, 10.0.0.1). Server2 solo tiene red muy aislada (10.0.0.2, gateway 10.0.0.1). Escenario de red privada con un único punto de salida.
 
-### `proyecto1/` — Infraestructura base del Proyecto 1 ⚠️
-
-Escenario con 2 VMs (apache2 en Debian y mariadb en Ubuntu) conectadas a tres redes: una exterior NAT con DHCP, una red de gestión y una red de datos, ambas aisladas con IPs estáticas. Sirve como infraestructura base sobre la que se desarrolla el Proyecto 1.
-
-**Incompatible con el plan actual**: usa el provider `libvirt`, pero el Proyecto 1 del curso se ha planteado sobre **OpenStack**. Hay que decidir si se adapta este escenario al provider `openstack` o si se sustituye.
+### `proyecto1/` — Infraestructura base del Proyecto 1
