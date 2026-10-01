@@ -3,12 +3,12 @@
   roles:
    - role: commons
 
-- hosts: servidor_web
+- hosts: servidores_web
   become: true
   roles:
    - role: apache2
 
-- hosts: servidor_bd
+- hosts: servidores_bd
   become: true
   roles:
    - role: mariadb
