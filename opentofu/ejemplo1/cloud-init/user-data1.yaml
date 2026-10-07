@@ -8,14 +8,14 @@ users:
     groups: users, admin
     shell: /bin/bash
     ssh_authorized_keys:
-      - ssh-ed25519 AAAA... sustituye esta línea por tu clave pública
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN1Pll8ZZb/tjVJ7utbE8fKQRFX8+xnG9cbeIeVXClhp adrian@atlas
 
 
 chpasswd:
   expire: False
   users:
     - name: debian
-      password: asdasd
+      password: usuario
       type: text
 
 package_update: true # refresca índices de apt
