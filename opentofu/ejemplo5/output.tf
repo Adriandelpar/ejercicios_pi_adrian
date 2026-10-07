@@ -11,6 +11,6 @@ output "ej5-server1" {
 output "ej5-server2" {
   value = {
     nombre = "ej5-server2"
-    ip1    = try(libvirt_domain.ej5-server2.network_interface[0].addresses[0], "No disponible")
+    ip1    = "10.0.0.2" # estática: está en cloud-init/network-config2.yaml
   }
 }
